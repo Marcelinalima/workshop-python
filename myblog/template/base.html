@@ -1,0 +1,27 @@
+{% load static%}
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="{% static "css/foundtion.css" %}">
+</head>
+<body>
+    <section class ="row" >
+        <header class="large-12 columns">
+          <h1> Bem vindos ao meu Blog</h1>
+        </header>
+    </section>
+    <section class ="grid-x">
+        <div class="cell large-8">
+          {% block content%}  {% endblock%}
+        </div>
+        <div class="cell large-4">
+           <h3>sobre mim</h3>
+           <p>Dev python aprendendo Django!</p>
+          </div>
+    </header>
+    </section>
+
+</body>
+</html>
